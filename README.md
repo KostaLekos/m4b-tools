@@ -1,21 +1,21 @@
-#### m4b-tools
+# m4b-tools
 
 Currently only tested on Linux (Arch).
 
 If you run into any errors, it would be greatly appreciated if you reported them.
 
-### Installion
+## Installion
 - Open the scripts folder
 - Pick your desired script
 - Download it
 
-### Use
+## Use
 
-## embed_champters.sh
+### embed_champters.sh
 
 A Bash script for embedding chapters from a ``.cue`` file into an existing .m4b audiobook, while preserving metadata and cover art.
 
-# Features
+#### Features
 
 - Parses ``.cue`` files to generate chapter metadata for ``.m4b`` audiobooks.
 
@@ -25,11 +25,11 @@ A Bash script for embedding chapters from a ``.cue`` file into an existing .m4b 
 
 - Outputs a new ``.m4b`` file with chapters.
 
-# Prerequisites
+#### Prerequisites
 
 - **ffmpeg**: Must be installed and available in your ``PATH``.
 
-# Usage
+#### Usage
 
 Run the script and follow the prompts (script can be run from any folder and files can be in any folder):
 ```./embed_chapters.sh```
@@ -49,7 +49,7 @@ Enter path to input .m4b file: /path/to/audiobook.m4b
 Enter desired output path for new .m4b file (including filename): /path/to/audiobook_with_chapters.m4b
 ```
 
-# Notes
+#### Notes
 
 - The script creates a temporary ``ffmetadata`` file to store chapter data.
 
@@ -57,7 +57,7 @@ Enter desired output path for new .m4b file (including filename): /path/to/audio
 
 - The output ``.m4b`` retains all streams, including audio and cover art.
 
-# Limitations
+#### Limitations
 
 - Designed for ``.cue`` files using standard formatting (``TRACK``, ``INDEX``, and ``TITLE`` lines).
 
@@ -66,11 +66,11 @@ Enter desired output path for new .m4b file (including filename): /path/to/audio
 - Timestamps in ``.cue`` files are converted from MM:SS:FF (75 fps) to milliseconds.
 
 
-## mp3_to_m4b.sh
+### mp3_to_m4b.sh
 
 A Bash script to convert a folder of ``.mp3`` files into a single ``.m4b`` audiobook, complete with chapters and optional cover art.
 
-# Features
+#### Features
 
 - Converts multiple ``.mp3`` files into a single ``.m4b`` audiobook.
 
@@ -82,7 +82,7 @@ A Bash script to convert a folder of ``.mp3`` files into a single ``.m4b`` audio
 
 - Outputs a clean ``.m4b`` file at 128kbps AAC audio (industry standard).
 
-# Prerequisites
+#### Prerequisites
 
 - **ffmpeg**: For audio and video processing.
 
@@ -90,7 +90,7 @@ A Bash script to convert a folder of ``.mp3`` files into a single ``.m4b`` audio
 
 - ``find``, ``sort``, and standard GNU utilities.
 
-# Usage
+#### Usage
 
 Run the script and follow the prompts (script can be run from any folder and files can be in any folder):
 ```./mp3_to_m4b.sh```
@@ -122,7 +122,7 @@ The script will:
 
 5. Clean up temporary files.
 
-# Output
+#### Output
 
 - The final ``.m4b`` audiobook file at the path you specified.
 
@@ -130,7 +130,7 @@ The script will:
 
 - Cover art embedded if provided.
 
-# Notes
+#### Notes
 
 - The script assumes ``.mp3`` files are named and ordered as you want them in the final audiobook.
 
