@@ -4,12 +4,15 @@ Currently only tested on Linux (Arch).
 
 If you run into any errors, it would be greatly appreciated if you reported them.
 
+
 ## Installion
 - Open the scripts folder
 - Pick your desired script
 - Download it
 
+
 ## Use
+
 
 ### embed_champters.sh
 
@@ -64,6 +67,8 @@ Enter desired output path for new .m4b file (including filename): /path/to/audio
 - Chapters must be defined in the ``.cue`` file using ``INDEX 01`` entries.
 
 - Timestamps in ``.cue`` files are converted from MM:SS:FF (75 fps) to milliseconds.
+
+
 
 
 ### mp3_to_m4b.sh
